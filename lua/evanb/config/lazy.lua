@@ -23,6 +23,7 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
+  enabled = false,
   spec = {
     -- import your plugins
     { import = "evanb/plugins" },

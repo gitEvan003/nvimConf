@@ -18,6 +18,16 @@ return {
             ["q"] = require("telescope.actions").close,
           },
         },
+		file_ignore_patterns = { "node_modules", ".git/" },
+		path_display = { "smart" },
+		pickers = {
+			find_files = {
+				cwd = vim.fn.getcwd(),
+			},
+			live_grep = {
+			  cwd = vim.fn.getcwd(),
+			},
+		},
       },
     })
 
