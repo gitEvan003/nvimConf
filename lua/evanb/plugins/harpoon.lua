@@ -17,7 +17,7 @@ return {
     map("n", "<leader>a", function() list:add() end, { desc = "Harpoon: Add file" })
 
     -- Delete current file from list
-    map("n", "<leader>da", function() list:remove() end, {desc = "Harpoon: Delete file" })
+    map("n", "<leader>d", function() list:remove() end, {desc = "Harpoon: Delete file" })
 
     -- Toggle Harpoon quick menu
     map("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(list) end, { desc = "Harpoon: Toggle quick menu" })
